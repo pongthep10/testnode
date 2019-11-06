@@ -25,7 +25,7 @@ module.exports = messageController = async (req, res, next) => {
     }).save(null, {method:'insert'})
 
   console.log(message)
-  res.send(message.toJSON());
+  res.send(messageResponse.toJSON());
 }
 
 
